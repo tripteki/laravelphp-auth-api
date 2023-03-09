@@ -1,0 +1,53 @@
+{
+    "name": "tripteki/laravelphp-auth-api",
+    "version": "1.0.0",
+    "description": "Trip Teknologi's Laravel.php Auth API (Session/Token Sanctum, Token JWT, Token OAuth Passport)",
+
+    "readme": "README.md",
+    "license": "MIT",
+    "authors": [ { "name": "Trip Teknologi", "email": "tripteki.company@gmail.com" } ],
+    "homepage": "https://github.com/tripteki/laravelphp-auth-api",
+    "support": { "issues": "https://github.com/tripteki/laravelphp-auth-api/issues" },
+
+    "require": {
+
+        "php": "^8.0.2",
+
+        "tripteki/laravelphp-helpers": "^1.0.0",
+
+        "laravel/fortify": "^1.0.0"
+    },
+
+    "require-dev": {},
+
+    "suggest": {
+
+        "laravel/lumen-framework": "Required when using lumen framework (^9.0).",
+        "laravel/framework": "Required when using laravel framework (^9.0)."
+    },
+
+    "autoload": {
+
+        "psr-4": {
+
+            "Tripteki\\AuthToken\\": "src/"
+        }
+    },
+
+    "autoload-dev": {},
+
+    "extra": {
+
+        "laravel": {
+
+            "dont-discover": [],
+
+            "providers": [
+
+                "Tripteki\\AuthToken\\Providers\\AuthTokenServiceProvider"
+            ],
+
+            "aliases": []
+        }
+    }
+}
